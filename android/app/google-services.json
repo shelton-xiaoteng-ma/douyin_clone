@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "746688591798",
+    "project_id": "douyin-clone",
+    "storage_bucket": "douyin-clone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746688591798:android:5ba68ba30ec86c9dcf7317",
+        "android_client_info": {
+          "package_name": "top.sheltonma"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG7daWYhlWXeuUUiprYYnnCAMU6gCrfkI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
