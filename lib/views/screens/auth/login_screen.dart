@@ -24,7 +24,7 @@ class LoginScreen extends StatelessWidget {
             }
           }),
           AuthStateChangeAction<SigningUp>((context, state) {
-            Navigator.pushReplacementNamed(context, '/sign-in');
+            Navigator.pushReplacementNamed(context, screenId);
           }),
         ],
       ),

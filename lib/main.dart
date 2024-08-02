@@ -23,8 +23,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    User? user = FirebaseAuth.instance.currentUser;
-
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Douyin Clone',
@@ -36,7 +34,7 @@ class MyApp extends StatelessWidget {
         HomeScreen.screenId: (context) => HomeScreen(),
         LoginScreen.screenId: (context) => LoginScreen(),
       },
-      initialRoute: user != null ? HomeScreen.screenId : LoginScreen.screenId,
+      initialRoute: HomeScreen.screenId,
     );
   }
 }
