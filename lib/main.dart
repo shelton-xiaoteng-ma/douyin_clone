@@ -1,3 +1,4 @@
+import 'package:douyin_clone/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -24,11 +25,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData.light().copyWith(
+        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          selectedItemColor: Color(kActiveColor),
+          unselectedItemColor: Color(kInActiveColor),
+          backgroundColor: Color(kBackgroundColor),
+        ),
+        scaffoldBackgroundColor: Color(kBackgroundColor),
+      ),
+      darkTheme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
       title: 'Douyin Clone',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
       routes: {
         // '/
         HomeScreen.screenId: (context) => HomeScreen(),

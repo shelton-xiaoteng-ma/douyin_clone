@@ -1,3 +1,4 @@
+import 'package:douyin_clone/constants.dart';
 import 'package:flutter/material.dart';
 
 class CustomPlusIcon extends StatelessWidget {
@@ -10,20 +11,20 @@ class CustomPlusIcon extends StatelessWidget {
         width: 50,
         height: 40,
         decoration: BoxDecoration(
-          color: Colors.black,
+          color: Colors.white,
           borderRadius: BorderRadius.circular(10),
         ),
         child: Padding(
           padding: EdgeInsets.all(3),
           child: Container(
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: Color(kBackgroundColor),
               borderRadius: BorderRadius.circular(8),
             ),
             child: Icon(
               Icons.add,
               size: 30,
-              color: Colors.black,
+              color: Colors.white,
             ),
           ),
         ),
