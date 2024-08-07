@@ -2,9 +2,10 @@ import 'package:douyin_clone/views/screens/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'views/screens/add_video_screen.dart';
 import 'views/screens/camera_screen.dart';
+import 'views/screens/video_screen.dart';
 
 List<Widget> pages = [
-  Text('HomeScreen'),
+  VideoScreen(),
   Text('FriendScreen'),
   // AddVideoScreen(),
   CameraScreen(),
